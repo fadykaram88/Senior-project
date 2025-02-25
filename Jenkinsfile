@@ -16,7 +16,7 @@ pipeline {
 
         stage('Restart Application') {
             steps {
-                sh '/usr/bin/pm2 restart index.js || /usr/bin/pm2 start index.js''
+                sh "/usr/bin/pm2 restart index.js || /usr/bin/pm2 start index.js"
             }
         }
     }
